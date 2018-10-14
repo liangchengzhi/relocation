@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.lang.time.DateFormatUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
@@ -286,8 +287,8 @@ public class TransitionfeeServiceImpl implements TransitionfeeService{
 						dateBgin = r.getStartTime().getTime();
 					}
 				} else {
-					dateBgin = this.getNoneTimeDate(r.getLastComputeTime()
-							.getTime());
+					Calendar lastCalTime = recordDAO.inquiryLastCalTime(r.getId());
+					dateBgin = this.getNoneTimeDate(lastCalTime.getTime());
 				}
 
 				/* 如果设了截止日，则优先算到截止日期 */
