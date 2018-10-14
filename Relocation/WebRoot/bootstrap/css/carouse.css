@@ -1,0 +1,68 @@
+.carousel {
+    height: 130px;
+
+}
+.carousel ul li {
+    background: none;
+    width: 164px;
+    margin-right: 20px;
+    padding: 0;
+}
+.jcarousel-direction-rtl {
+    direction: rtl;
+}
+.carousel .jcarousel-container {
+    display: block;
+    overflow: hidden;
+}
+.carousel .jcarousel-item {
+    width: 164px;
+    height: 130px;
+}
+.carousel .jcarousel-item img {
+    padding: 0;
+}
+.carousel .jcarousel-container {
+    display: block;
+    overflow: hidden;
+    height: 164px;
+}
+.carousel .jcarousel-clip-horizontal {
+    width: 1110px;
+    height: 130px;
+    overflow: hidden;
+    display: block;
+}
+.carousel .jcarousel-item {
+    width: 164px;
+    height: 130px;
+}
+#carousel-scroll {
+    float: right;
+    margin-top: 60px;
+}
+#prev, #next {
+    background: transparent url(../../html/images/car-arrow.png) no-repeat;
+    width: 21px;
+    height: 21px;
+    text-indent: -99999px;
+    display: block;
+    -webkit-transition:none;
+    -o-transition:none;
+    -moz-transition:none;
+}
+#prev {
+    background-position: top left;
+    float: left;
+}
+#next {
+    background-position: top right;
+    float: right;
+    margin-left: 6px;
+}
+#prev:hover {
+    background-position: bottom left;
+}
+#next:hover {
+    background-position: bottom right;
+}

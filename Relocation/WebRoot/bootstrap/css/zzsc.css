@@ -1,0 +1,34 @@
+
+/*public*/
+.fl{display:inline;float:left;margin: 0px;padding-left: 10px}
+.cf:after{content:"";clear:both;display:block;height:0;overflow:hidden}
+.cf{zoom:1}
+.pb10{padding-bottom:10px}
+.mt10{margin-top:10px}.fr{display:inline;float:left}
+
+/*main*/
+.case{width:100%;margin:0px auto;background:#fff;padding:0px;box-shadow:0 0 5px #ccc;}
+.case .title{height:20px;border-bottom: 2px solid #e7e7e7;padding:15px 0 10px 0;}
+
+.case .title-list{ position: relative; top: 6px;}
+.case .title-list li{ width: 146px; line-height: 20px; text-align: center; float: left; display: inline;font-size: 15px}
+.case .title-list li.on{ color: #7bac06; font-weight: bold; font-size: 16px}
+.case .title-list p{position:absolute;top:24px;left:0px;width:146px;height:7px;border-top: 2px solid #7bac06; overflow: hidden; text-align: center;}
+.case .title-list b{display:inline-block;width:0;height:0;margin-top:-3px;border-style:solid dashed dashed dashed;border-width:9px;border-color: #7bac06 #fff #fff #fff;overflow: hidden;zoom: 1;font-size: 0;}
+.product{  position: relative;  display: none; margin-top: 20px;}
+
+.product-wrap .show{ display: block;}
+
+
+
+
+.case .mystate li.on {
+    color: #ff3c3c !important;
+}
+.case .mystate p{
+    border-top: 2px solid #ff3c3c; !important;
+}
+
+.case .mystate b {
+    border-color: #ff3c3c #fff #fff #fff; !important;
+}

@@ -1,0 +1,5 @@
+delete from record_transitionfee;
+delete from record_return;
+delete from record;
+delete from project;
+delete from user_operate_log;

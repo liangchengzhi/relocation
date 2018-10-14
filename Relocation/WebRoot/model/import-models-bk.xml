@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<import-models>
+	<import-model id="recordInputModel" desc="拆迁数据导入模板">
+	    <input name="index" desc="序号" type="string" required="true"/>
+	    <input name="oldProjectNo" desc="原系统项目代码" type="string" required="false"/>
+		<input name="infoId" desc="信息ID" type="string" required="false"/>
+		<input name="username" desc="姓名" type="string" required="true"/>
+		<input name="usercontact" desc="联系方式" type="string" required="false"/>
+		<input name="useraddress" desc="地址" type="string" required="true"/>
+		<input name="contractNumber" desc="合同编号" type="string" required="true"/>
+		<input name="recordNumber" desc="备案编号" type="string" required="true"/>
+		<input name="projectName" desc="项目名称" type="string" required="true"/>
+		<input name="startTime" desc="交房截止日期" type="string" required="true"/>
+		<input name="endTime" desc="还房截止日期" type="string" required="true"/>
+		<input name="firstStartTime" desc="首次过渡开始" type="string" required="true"/>
+		<input name="firstEndTime" desc="首次过渡结束" type="string" required="true"/>
+		<input name="firstFee" desc="首次过渡费" type="double" required="true"/>
+		<input name="acctNo" desc="银行账户" type="string" required="false"/>
+		<input name="houseArea" desc="原住宅房面积（㎡）" type="double" required="false"/>
+		<input name="businessArea" desc="原营业房面积*（㎡）" type="double" required="false"/>
+		<input name="productionArea" desc="原生产用房面积（㎡）" type="string" required="false"/>
+		<input name="replaceHouseArea" desc="住宅置换面积" type="double" required="false"/>
+		<input name="areaBenefit100" desc="100㎡优惠" type="boolean" required="false" defaultValue="1"/>
+		<input name="planHouseAreaBack" desc="拟还住宅房面积" type="double" required="false"/>
+		<input name="planReturnHouseInfo" desc="拟还住宅房信息" type="string" required="false"/>
+		<input name="planBusinessAreaBack" desc="拟还营业房面积" type="double" required="false"/>
+		<input name="planReturnBusinessInfo" desc="拟还营业房信息" type="string" required="false"/>
+		<input name="balance1" desc="安置补偿金额（元）" type="double" required="false"/>
+		<input name="balance2" desc="被拆迁人补偿金额(元)" type="double" required="false"/>
+		<input name="selfRemoveArea" desc="自拆面积（㎡）" type="string" required="false"/>
+		<input name="selfRemoveAmount" desc="自拆金额（元）" type="String" required="false"/>
+		<input name="idNo" desc="身份证" type="string" required="false"/>
+		<input name="lastComputeTime" desc="上一次过渡费计算时间" type="string" required="false"/>
+		<input name="isEnd" desc="是否已结束" type="string" required="false"/>
+		<input name="pauseCalculateFee" desc="暂停计算过渡费(1是，0否，默认为否)" type="boolean" required="false" defaultValue="0"/>
+		<input name="remark" desc="备注" type="string" required="false"/>
+	</import-model>
+	<import-model id="recordReturnModel" desc="还房导入模板">
+	    <input name="index" desc="序号" type="string" required="true"/>
+	    <input name="oldProjectNo" desc="原系统项目代码" type="string" required="false"/>
+	    <input name="infoId" desc="信息ID" type="string" required="false"/>
+	    <input name="name" desc="姓名" type="string" required="false"/>
+	    <input name="projectName" desc="项目名称" type="string" required="true"/>
+	    <input name="recordNumber" desc="备案号" type="string" required="true"/>
+	    <input name="contractNumber" desc="合同编号" type="string" required="false"/>
+	    <input name="houseAreaReturn" desc="还住宅房面积(㎡)" type="double" required="true"/>
+	    <input name="returnTime" desc="还房时间" type="string" required="true"/>
+	    <input name="inputUser" desc="填表人" type="string" required="false"/>
+	    <input name="houseDtl1" desc="住宅房还房区域栋数" type="string" required="false"/>
+	    <input name="houseDtl2" desc="住宅房房间编号" type="string" required="false"/>
+	    <input name="phone" desc="联系电话" type="string" required="false"/>
+<!-- 	    <input name="businessAreaReturn" desc="还营业房面积(㎡)" type="double" required="false"/> -->	
+	</import-model>
+</import-models>

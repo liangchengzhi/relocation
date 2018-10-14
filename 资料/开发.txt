@@ -1,0 +1,27 @@
+﻿远程连接：
+122.114.133.159
+administrator/AAAaaa111
+
+
+
+服务器域名:
+http://gsl.52zy.cn:8080/Relocation/
+
+
+## 数据库
+# 登陆MySQL:
+mysql -u root -p 
+123456
+
+# 创建数据库
+create database relocation;
+
+# 密码
+select md5(concat(md5('111111'),'gJ0U')) from dual;
+
+
+# 季度过渡费计算
+AdminController.computeTransitionfee
+
+
+
