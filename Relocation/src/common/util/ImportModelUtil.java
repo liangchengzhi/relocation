@@ -14,6 +14,7 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.Node;
 
+import common.entity.basic.IFSException;
 import common.entity.basic.ImportModel;
 import common.entity.basic.Input;
 
@@ -96,8 +97,11 @@ public class ImportModelUtil {
 	 */
 	public Integer getImportModelKeyIndex(String modelId,String key){
 		ImportModel importModel = importModels.get(modelId);
-		if(importModel == null || importModel.getIndexs() == null){
-			return null;
+		if(importModel == null){
+			throw new IFSException("ImportModelUtil.getImportModelKeyIndex.01",modelId + "." + key + "无法找到模板,[" + importModel + "]"); 
+		}
+		if(importModel.getIndexs() == null){
+			throw new IFSException("ImportModelUtil.getImportModelKeyIndex.02",modelId + "." + key + "importModel index 为空,[" + importModel + "]"); 
 		}
 		return importModel.getIndexs().get(key);
 	}
